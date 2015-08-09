@@ -1,7 +1,7 @@
-module.exports = Number.isFinite || function isFinite(obj) {
+module.exports = Number.isFinite || function isFinite(value) {
     return !(
-        typeof(obj) !== "number" ||
-        (obj !== obj || obj === Infinity || obj === -Infinity) ||
+        typeof(value) !== "number" ||
+        (value !== value || value === Infinity || value === -Infinity) ||
         false
     );
 };
